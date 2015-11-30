@@ -1,0 +1,51 @@
+//
+//  Beyond.pch
+//  UM_Try
+//
+//  Created by 肖利 on 15/11/17.
+//  Copyright (c) 2015年 肖利. All rights reserved.
+//
+
+#ifndef UM_Try_Beyond_pch
+#define UM_Try_Beyond_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+// beyond
+#define kApp_id @"aaf98f89510f639f0151136870a80c25"
+#define kApp_token @"bf9de48f763c8b3f06195b598a479547"
+
+
+//// DEMO
+//#define kApp_id @"20150314000000110000000000000010"
+//#define kApp_token @"17E24E5AFDB6D0C1EF32F3533494502B"
+
+
+
+
+
+//// 应用名称：HongLouMeng
+//#define kApp_id @"8a48b551511a2cec01511ea472b50e56"
+//#define kApp_token @"722a2508e03c536090585b20cc7ee225"
+
+#define kUser_beyond @"beyond"
+#define kUser_weixi @"weixi"
+
+
+
+
+
+#ifdef DEBUG
+# define DLog(fmt, ...) NSLog((@"\r\n\r\n\t [文件名:%s]\n" "[函数名:%s]\n" "[行号:%d] \n\r\n\r\n\t " fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+# define DLog(...);
+#endif
+
+
+
+
+
+#endif
